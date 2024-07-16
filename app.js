@@ -4,8 +4,9 @@ let numeroAleatorio = geraNumeroAleatorio();
 let numeroTentativas = 1;
 
 function alteraTexto(tag, texto) {
-    let campo = document.querySelector(tag)
-    campo.innerHTML = texto
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.3});
 }
 
 exibirMensagemInicial();
